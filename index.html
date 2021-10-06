@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Price Table</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+    width: 50%;
+    margin: auto;
+    padding-top:70px;
+    position:relative;
+}
+
+    
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+    font-size:10px;
+    color:rgb(85, 81, 81);
+    position:relative;
+    }
+ 
+.columns {
+    float: left;
+    width: 33%;
+    padding: 15px;
+}
+ 
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+ 
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.button1:hover, .button1:active {
+  background-color: skyblue;
+  color:white;
+}
+
+.button2:hover, .button2:active {
+  background-color: violet;
+  color:white;
+}
+
+.button3:hover, .button3:active {
+  background-color: green;
+  color:white;
+}
+ 
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+ 
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    text-align: center;
+}
+ 
+.price .grey {
+    background-color: #eee;
+}
+ 
+.button1 {
+    background-color: white;
+    border:1px solid;
+    color:rgb(14, 153, 207);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.button2 {
+    background-color: white;
+    border:1px solid;
+    color:violet;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.button3 {
+    background-color: white;
+    border:1px solid;
+    color:green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.topbar1{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    height: 40px;
+    border-radius:50%;
+    top:-35px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:1.5rem;
+    padding:35px 18px;
+    color: rgb(14, 153, 207);
+    background-color: rgb(248, 248, 248);
+    text-align:center;
+}
+
+.topbar2{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    height: 40px;
+    border-radius:50%;
+    top:-35px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:1.5rem;
+    padding:35px 18px;
+    color: rgb(14, 153, 207);
+    background-color: rgb(16, 21, 54);
+    text-align:center;
+}
+
+.topbar3{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    height: 40px;
+    border-radius:50%;
+    top:-35px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:1.5rem;
+    padding:35px 20px;
+    color: rgb(14, 153, 207);
+    background-color: rgb(248, 248, 248);
+    text-align:center;
+}
+
+.text1{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    height: 40px;
+    top:40px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:2.5rem;
+    padding:35px 20px;
+    color:rgb(240, 240, 240);
+    text-align:center;
+}
+
+.text2{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    height: 40px;
+    top:40px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:2.5rem;
+    padding:35px 20px;
+    color:rgb(240, 240, 240);
+    text-align: center;
+}
+
+.text3{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    height: 40px;
+    top:40px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:2.5rem;
+    padding:35px 20px;
+    color:rgb(240, 240, 240);
+    text-align:center;
+}
+
+.mark{
+    position:absolute;
+    left:2%;
+    transform: translateX(-50%);
+    height: 40px;
+    top:-20px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:2.5rem;
+    padding:35px 20px;
+    color:rgb(240, 240, 240);
+    text-align:center;
+}
+
+.text4{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    height: 40px;
+    top:1px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:0.9rem;
+    padding:35px 20px;
+    color:rgb(240, 240, 240);
+    text-align:center;
+}
+ 
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="columns">
+        <ul class="price">
+            <div>
+                <img src="ocean.png" alt="ocean" style="width:100%">
+                <div class="topbar1"><div style="color:skyblue;font-size:13px;">$399<br>
+                <span style="color:grey;">Per price</span>
+            </div>
+        </div>
+                <div class="text1">OCEAN</div>
+                
+            </div>
+            <li style="font-size:140%">Subtitle goes here<br><span style="font-size:62%">Subtitle second line goes here lorem ipsum *</span></li>
+            <li class="grey">Drop out ramen hustle</li>
+            <li>Coworking viral landing</li>
+            <li class="grey">Crush revenue traction</li>
+            <li>User base minimum viable</li>
+ 	        <li class="grey">Lorem ipsum dolor</li>
+            <li style="padding:40px"><a href="#" class="button1">BUY TOUR</a></li>
+        </ul>
+    </div>
+ 
+    <div class="columns">
+        <ul class="price">
+            <div>
+                <img src="mountain.png" alt="mountain" style="width:100%">
+                <div class="topbar2"><div style="color:violet;font-size:13px;">$499<br>
+                    <span style="color:grey;">Per price</span></div></div>
+                    <div class="text2">
+                        <div style="color:rgb(240, 240, 240);font-size:2.5rem">MOUNTAINS<br>
+                            <span style="color:rgb(240, 240, 240)">The best price/quantity plan *</span>
+                        </div>
+                    </div>
+            </div>
+            <div class="mark"><img src="newmark.png" alt="newmark" style="width:70%">
+            <div class="text4">NEW</div>
+            </div>
+            <li style="font-size:140%">Subtitle goes here<br><span style="font-size:62%">Subtitle second line goes here lorem ipsum *</span></li>
+            <li class="grey">Drop out ramen hustle</li>
+            <li>Coworking viral landing</li>
+            <li class="grey">Crush revenue traction</li>
+            <li>User base minimum viable</li>
+ 	        <li class="grey">Lorem ipsum dolor</li>
+            <li style="padding:40px"><a href="#" class="button2">BUY TOUR</a></li>
+        </ul>
+    </div>
+ 
+    <div class="columns">
+        <ul class="price">
+            <div><img src="forest.png" alt="forest" style="width:100%"></div>
+            <div class="topbar3"><div style="color:green;font-size:13px;">$599<br>
+                <span style="color:grey;">Per price</span>
+            </div>
+        </div>
+        <div class="text3">FOREST</div>
+            <li style="font-size:140%">Subtitle goes here<br><span style="font-size:62%">Subtitle second line goes here lorem ipsum *</span></li>
+            <li class="grey">Drop out ramen hustle</li>
+            <li>Coworking viral landing</li>
+            <li class="grey">Crush revenue traction</li>
+            <li>User base minimum viable</li>
+ 	        <li class="grey">Lorem ipsum dolor</li>
+            <li style="padding:40px"><a href="#" class="button3">BUY TOUR</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
