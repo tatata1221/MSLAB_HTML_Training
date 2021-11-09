@@ -1,18 +1,21 @@
-.container {
-    width: 50%;
-    margin: auto;
-    padding-top:70px;
-    position:relative;
-}
-
-    
 * {
     box-sizing: border-box;
-    font-family: Arial;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:10px;
     color:rgb(85, 81, 81);
     position:relative;
     }
+
+.container {
+    width: 50%;
+    margin: auto;
+    padding-top:70px;
+    position:relative;  
+}
+
+.gray{
+    color:rgb(95, 95, 95);
+}
  
 .columns {
     float: left;
@@ -34,17 +37,17 @@
 }
 
 .button1:hover, .button1:active {
-  background-color: skyblue;
+  background-color: rgb(9, 132, 180);
   color:white;
 }
 
 .button2:hover, .button2:active {
-  background-color: violet;
+  background-color: rgb(100, 49, 100);
   color:white;
 }
 
 .button3:hover, .button3:active {
-  background-color: green;
+  background-color: rgb(2, 131, 2);
   color:white;
 }
  
@@ -61,37 +64,37 @@
 }
  
 .price .grey {
-    background-color: #eee;
+    background-color: rgb(240, 240, 240);
 }
  
 .button1 {
     background-color: white;
-    border:1px solid;
-    color:rgb(14, 153, 207);
+    border:1.5px solid;
+    color:rgb(9, 132, 180);
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .button2 {
     background-color: white;
-    border:1px solid;
-    color:violet;
+    border:1.5px solid;
+    color:rgb(100, 49, 100);
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .button3 {
     background-color: white;
-    border:1px solid;
-    color:green;
+    border:1.5px solid;
+    color:rgb(2, 131, 2);
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .topbar1{
@@ -125,7 +128,7 @@
     padding:35px 18px;
     color: rgb(14, 153, 207);
     background-color: rgb(16, 21, 54);
-    text-align:center;
+    text-align: center;
 }
 
 .topbar3{
@@ -136,7 +139,6 @@
     border-radius:50%;
     top:-35px;
     display:flex;
-    justify-content:center;
     align-items: center;
     font-size:1.5rem;
     padding:35px 20px;
@@ -152,12 +154,10 @@
     height: 40px;
     top:40px;
     display:flex;
-    justify-content:center;
     align-items: center;
     font-size:2.5rem;
     padding:35px 20px;
     color:rgb(240, 240, 240);
-    text-align:center;
 }
 
 .text2{
@@ -167,12 +167,12 @@
     height: 40px;
     top:40px;
     display:flex;
-    justify-content:center;
+    flex-wrap: wrap;
     align-items: center;
     font-size:2.5rem;
-    padding:35px 20px;
+    padding:20px 20px;
     color:rgb(240, 240, 240);
-    text-align: center;
+    justify-content: center;
 }
 
 .text3{
@@ -182,12 +182,10 @@
     height: 40px;
     top:40px;
     display:flex;
-    justify-content:center;
     align-items: center;
     font-size:2.5rem;
     padding:35px 20px;
     color:rgb(240, 240, 240);
-    text-align:center;
 }
 
 .mark{
@@ -212,16 +210,23 @@
     height: 40px;
     top:1px;
     display:flex;
-    justify-content:center;
     align-items: center;
     font-size:0.9rem;
     padding:35px 20px;
-    color:rgb(240, 240, 240);
-    text-align:center;
+    color:rgb(240, 240, 240); 
+    font-weight: 600; 
 }
  
+@media only screen and (max-width: 1200px) {
+    .columns {
+	padding-top:30px;
+        width: 50%;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .columns {
         width: 100%;
     }
 }
+
